@@ -105,11 +105,15 @@ public class ClsService {
 		u2.setUserAge(19);
 		u2.setUserGender('F');
 		
+		System.out.println("===============u2==============");
+		
 		System.out.println(u2.getUserId());
 		System.out.println(u2.getUserPw());
 		System.out.println(u2.getUserName());
 		System.out.println(u2.getUserAge());
 		System.out.println(u2.getUserGender());
+		
+		System.out.println("================u3=============");
 		
 		User u3 = new User("test33", "pw123");
 		System.out.println(u3.getUserId());
@@ -118,6 +122,8 @@ public class ClsService {
 		System.out.println(u3.getUserAge());
 		System.out.println(u3.getUserGender());
 		
+		System.out.println("=============u4================");
+		
 		User u4 = new User("asdf123", "pasd23");
 		System.out.println(u4.getUserId());
 		System.out.println(u4.getUserPw());
@@ -125,7 +131,13 @@ public class ClsService {
 		System.out.println(u4.getUserAge());
 		System.out.println(u4.getUserGender());
 		
+		/*User u5 = new User("test01", "testPwd", 
+		 		"김유저", 10, 'F');*/
+		// 생성자 접근제한자 public 외 사용 하는 경우
+		// => 사용자가 임의로 해당 클래스를 이용하여
+		// 객체를 생성 못하게 해야할 때
 		
+
 	}
 	
 	
