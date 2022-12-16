@@ -54,7 +54,7 @@ public class MemberService { // 클래스
 	// 메뉴 화면 출력 기능
 	public void displayMenu() {
 		// 일은 하는데요.. 결과값은 없어요
-		int menuNum = 0; // 지역변수
+		int menuNum = 0; // 지역 변수
 		
 		do {
 			System.out.println("======회원정보 관리 프로그램======");
@@ -102,7 +102,7 @@ public class MemberService { // 클래스
 		String memberName = sc.next(); 
 		
 		System.out.print("나이: ");
-		String memberAge = sc.next(); 
+		int memberAge = sc.nextInt(); 
 		
 		// 비밀번호, 비밀번호 확인이 일치하면 회원가입
 		// 일치하지 않으면 회원가입 실패
@@ -110,7 +110,7 @@ public class MemberService { // 클래스
 			memberInfo = new Member(memberId, memberPw, memberName, memberAge);
 			return "회원 가입 성공!!!";
 		} else {
-			return "회원 가입 실패(비밀번호 불일치)";
+			return "회원 가입 실패!!!(비밀번호 불일치)";
 		}
 		
 	}

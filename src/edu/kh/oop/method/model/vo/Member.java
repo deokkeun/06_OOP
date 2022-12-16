@@ -6,7 +6,7 @@ public class Member {
 	private String memberId;
 	private String memberPw;
 	private String memberName;
-	private String memberAge;
+	private int memberAge;
 	
 	//생성자
 	// 기본생성자
@@ -15,7 +15,7 @@ public class Member {
 	public Member() {}
 
 	// 매개변수 생성자
-	public Member(String memberId, String memberPw, String memberName, String memberAge) {
+	public Member(String memberId, String memberPw, String memberName, int memberAge) {
 		this.memberId = memberId;
 		this.memberPw = memberPw;
 		this.memberName = memberName;
@@ -52,7 +52,7 @@ public class Member {
 		this.memberName = memberName;
 	}
 
-	public String getMemberAge() {
+	public int getMemberAge() {
 		return memberAge;
 	}
 
